@@ -5,7 +5,7 @@ from torch.utils.data import Dataset
 from PIL import Image
 
 
-# Augumentation
+# Augmentation
 def rotate(img, msk, degrees=(-15,15), p=0.5):
     if torch.rand(1) < p:
         degree = np.random.uniform(*degrees)
