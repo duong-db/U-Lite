@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-import np
+import numpy as np
 
 def iou_score(y_pred, y_true):
     y_pred = torch.sigmoid(y_pred)   
