@@ -1,6 +1,6 @@
 # U-Lite
-A lightweight CNN-based model for medical image segmentation
+A lightweight CNN-based model for medical image segmentation.
 
 # Update
-* Code is in progress
+* Code is in progress.
 
