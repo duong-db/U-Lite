@@ -23,7 +23,7 @@ def dice_score(y_pred, y_true, smooth=0.):
     y_true = y_true.view(-1)
     intersection = (y_pred * y_true).sum()
 
-    return (2. * intersection + smooth) / (output.sum() + target.sum() + smooth)
+    return (2. * intersection + smooth) / (y_pred.sum() + y_true.sum() + smooth)
 
 class DiceLoss(nn.Module):
     def __init__(self):
